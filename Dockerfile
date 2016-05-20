@@ -7,4 +7,4 @@ RUN go build main.go
 
 EXPOSE 80
 
-ENTRYPOINT ["main", "--bind", ":80"]
+ENTRYPOINT ["/service/main", "--bind", ":80"]
