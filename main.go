@@ -32,6 +32,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "Current time: %s!", time.Now())
 	fmt.Fprintf(w, "\n")
 	fmt.Fprintf(w, "Counter: %s", counter.String())
+	fmt.Fprintf(w, "\n")
 }
 
 func runCounter() {
